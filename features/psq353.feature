@@ -140,5 +140,10 @@ Feature: Ratecard Functionality
         When  if rate card expiration date is same as service start date in quote
         Then Actor see the error messege " Actor should be able to add the rate card"
 
+    Scenario: Display the Effective Date and Expiration Date field in New Rate card as mandatory
+        Given Actor navigate the Rate Cards page
+        And Actor click on New Rate Card button
+        When New Rate Card page displayed on screen
+        Then Actor verify "EffectiveDate" and "ExpirationDate" as mandatory
 
 
